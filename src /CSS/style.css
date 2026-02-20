@@ -1,0 +1,35 @@
+:root {
+  --bg:#0b0b12; --panel:#151525; --primary:#37d0ff; --accent:#c24bff;
+  --text:#fff; --muted:#9fb3c8; --stroke:#24243a; --radius:14px;
+  --transition:all 0.25s ease;
+}
+body{font-family:'Inter',sans-serif;background:var(--bg);color:var(--text);}
+button{cursor:pointer;}
+.card{background:var(--panel);border:1px solid var(--stroke);border-radius:var(--radius);padding:20px;transition:var(--transition);}
+.card:hover{transform:translateY(-3px);border-color:var(--primary);}
+audio{width:100%;margin-top:10px;}
+
+<html><head><meta name="color-scheme" content="light dark"></head><body><pre style="word-wrap: break-word; white-space: pre-wrap;">:root {
+    --bg: #0b0b12;
+    --panel: #151525;
+    --primary: #37d0ff;
+    --accent: #c24bff;
+    --text: #ffffff;
+    --muted: #9fb3c8;
+    --stroke: #24243a;
+    --radius: 14px;
+    --shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+ 
+body { font-family: 'Inter', sans-serif; background: var(--bg); color: var(--text); margin:0; line-height:1.6; }
+header { display:flex; justify-content:space-between; align-items:center; padding:15px 40px; background: rgba(11,11,18,0.85); backdrop-filter:blur(10px); }
+.logo { color:var(--primary); font-weight:900; font-size:24px; cursor:pointer; }
+nav a { margin-left:20px; color:var(--text); text-decoration:none; font-weight:600; }
+.btn { background:linear-gradient(90deg,var(--primary),var(--accent)); color:#000; padding:12px 22px; border-radius:8px; font-weight:800; cursor:pointer; border:none; }
+.btn:hover { opacity:0.9; transform:translateY(-2px);}
+.btn.outline { background:none; border:1px solid var(--stroke); color:var(--text);}
+.btn.outline:hover { border-color:var(--primary);}
+.hero { text-align:center; padding:100px 20px;}
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:25px; margin-top:40px;}
+.card { background:var(--panel); border:1px solid var(--stroke); border-radius:var(--radius); padding:30px; transition:0.25s;}
+.card:hover { border-color:var(--primary); transform:translateY(-5px);}</pre></body></html>

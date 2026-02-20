@@ -1,0 +1,18 @@
+.glass-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(20px); /* Deep blur hides the empty dashboard */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.onboarding-content {
+    max-width: 500px;
+    padding: 3rem;
+    text-align: center;
+    border: 1px solid rgba(55, 208, 255, 0.3);
+}
