@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/signup", "destination": "/index.html" },
+    { "source": "/dashboard", "destination": "/index.html" },
+    { "source": "/onboarding", "destination": "/index.html" },
+    { "source": "/((?!api/|terms.html).*)", "destination": "/index.html" }
+  ]
+}
+
