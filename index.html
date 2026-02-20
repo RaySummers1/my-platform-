@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SMGPUB℠ | Midnight Sapphire</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link rel="stylesheet" href="/src/css/glass-ui.css">
+</head>
+<body class="bg-sapphire">
+    <main class="glass-container">
+        <h1 class="text-gradient">Automated Music Publishing</h1>
+        <p>Your catalog, protected and monetized.</p>
+        <div class="cta-group">
+            <button onclick="location.href='/dashboard'" class="btn-primary">Enter Dashboard</button>
+            <button class="btn-outline">View Plans</button>
+        </div>
+    </main>
+    <script type="module" src="/src/js/main.js"></script>
+const triggerBulkPayout = async (selectedArtists) => {
+    const response = await fetch('/api/payouts/bulk', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ payouts: selectedArtists })
+    });
+    
+    if (response.ok) {
+        alert("SMGPUB℠: Bulk Payouts Initialized Successfully!");
+    }
+};
+
+</body>
+</html>
